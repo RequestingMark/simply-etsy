@@ -1,1 +1,1 @@
-# etsy-shop-plugin
+# EtsyShopPlugin
