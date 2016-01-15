@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Example - EtsyShopPlugin</title>
+		
+		<link rel="stylesheet" href="css/etsyshopplugin.css">
+		
+	</head>
+	
+	<body>
+		<div id="etsy-shop"></div>
+		
+		<script src="js/jquery.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/etsyshopplugin.js"></script>
+		
+		<script>
+			$(document).ready(function() {
+				$("#etsy-shop").etsyShopPlugin({
+					api_key: "p1wqc3kotjniomf52gstp9d0",
+					store_name: "Damerino",
+					paginate: 15,
+					theme: "light"
+				});
+			});
+		</script>
+	</body>
+</html>
