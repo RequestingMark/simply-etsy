@@ -5,8 +5,7 @@
    General Styles
    ========================================================================== */
    
-	.clearfix:before,
-	.clearfix:after {
+	.clearfix:before, .clearfix:after {
 	  content: "";
 	  display: table;
 	}
@@ -19,40 +18,48 @@
 	  zoom: 1; /* ie 6/7 */
 	}
 	
-	.etsy-shop-plugin, .etsy-shop-plugin * {
+	.simply-etsy, .simply-etsy * {
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 	}
 	
-	.etsy-header {
+	.simply-etsy__header {
 		border-bottom: 3px solid #AAA;
 		margin-bottom: 15px;
 		padding-bottom: 15px;
 	}
+
+	.simply-etsy__listing-container {
+
+	}
 	
-	.etsy-listing {
+	.simply-etsy__listing {
 		float: left;
 		padding: 5px;
 		width: 20%;
 	}
 	
-	.etsy-listing-inner {
+	.simply-etsy__listing-inner {
 		border: 2px solid #DDD;
 		padding: 5px;
 	}
+
+	.simply-etsy__listing-image {
+		margin: 0;
+	}
 	
-	.etsy-listing-image a {
+	.simply-etsy__listing-image a {
 		display: inline-block;
 		width: 100%;
 	}
 	
-	.etsy-listing-image img {
+	.simply-etsy__listing-image img {
 		width: 100%;
 		height: auto;
 	}
 	
-	.etsy-listing-price {
+	.simply-etsy__listing-price {
 		float: right;
 		font-weight: bold;
 		text-align: right;
@@ -60,20 +67,20 @@
 		white-space: nowrap;
 	}
 	
-	.etsy-listing-price .currency-code {
+	.simply-etsy__currency-code {
 		font-size: .8em;
 	}
 	
-	.etsy-listing-shop {
+	.simply-etsy__listing-shop {
 		float: left;
 	}
 	
-	.etsy-listing-shop a {
+	.simply-etsy__listing-shop a {
 		color: #888;
 		text-decoration: underline;
 	}
 	
-	.etsy-listing-title {
+	.simply-etsy__listing-title {
 		font-size: 15px;
 		font-weight: bold;
 		line-height: 30px;
@@ -85,18 +92,18 @@
 		text-overflow: ellipsis;
 	}
 	
-	.etsy-navigation {
+	.simply-etsy__navigation {
 		list-style: none;
 		margin: 20px auto;
 		text-align: center;
 	}
 	
-	.etsy-navigation li {
+	.simply-etsy__navigation li {
 		display: inline-block;
 		margin: 5px 5px;
 	}
 	
-	.etsy-navigation li a {
+	.simply-etsy__navigation li a {
 		background-color: #FFF;
 		border: 1px solid #AAA;
 		color: #000;
@@ -109,24 +116,24 @@
 		text-decoration: none;
 	}
 	
-	.etsy-navigation li a.active {
+	.simply-etsy__navigation li a.active {
 		background-color: #DDD;
 		border: 1px solid #555;
 	}
    
    @media screen and (max-width:991px) {
-		.etsy-listing-container .etsy-listing {
+		.simply-etsy__listing {
 			width: 25%;
 		}
 	}
 	
 	@media screen and (max-width:675px) {
-		.etsy-listing-container .etsy-listing {
+		.simply-etsy__listing {
 			width: 33.33%;
 		}
 	}
 	@media screen and (max-width:475px) {
-		.etsy-listing-container .etsy-listing {
+		.simply-etsy__listing {
 			width: 50%;
 		}
 	}
@@ -135,38 +142,38 @@
    Dark Theme
    ========================================================================== */
    
-   .etsy-dark a {
+   .simply-etsy--dark a {
 	   color: #FFF;
    }
 	
-	.etsy-dark .etsy-header {
+	.simply-etsy--dark .simply-etsy__header {
 		color: #DDD;
 	}
 	
-	.etsy-dark .etsy-listing-inner {
+	.simply-etsy--dark .simply-etsy__listing-inner {
 		background: rgba(0,0,0,.5);
 		border: 2px solid #777;
 	}
 	
-	.etsy-dark .etsy-listing-price {
+	.simply-etsy--dark .simply-etsy__listing-price {
 		color: #DDD;
 	}
 	
-	.etsy-dark .etsy-listing-shop a {
+	.simply-etsy--dark .simply-etsy__listing-shop a {
 		color: #BBB;
 	}
 	
-	.etsy-dark .etsy-listing-title {
+	.simply-etsy--dark .simply-etsy__listing-title {
 		color: #DDD;
 	}
 	
-	.etsy-dark .etsy-navigation li a {
+	.simply-etsy--dark .simply-etsy__navigation li a {
 		background: rgba(0,0,0,.5);
 		border: 1px solid rgba(255,255,255,.3);
 		color: #DDD;
 	}
 	
-	.etsy-dark .etsy-navigation li a.active {
+	.simply-etsy--dark .simply-etsy__navigation li a.active {
 		background-color: rgba(255,255,255,.4);
 		border: 1px solid rgba(255,255,255,.5);
 	}
@@ -175,25 +182,25 @@
    Light Theme
    ========================================================================== */
 	
-	.etsy-light a {
+	.simply-etsy--light a {
 		color: #888;
 	}
 	
-	.etsy-light .etsy-listing-inner {
+	.simply-etsy--light .simply-etsy__listing-inner {
 		border: 2px solid #DDD;
 	}
 	
-	.etsy-light .etsy-listing-shop a {
+	.simply-etsy--light .simply-etsy__listing-shop a {
 		color: #777;
 	}
 	
-	.etsy-light .etsy-navigation li a {
+	.simply-etsy--light .simply-etsy__navigation li a {
 		background: rgba(255,255,255,.5);
 		border: 1px solid rgba(0,0,0,.3);
 		color: #000;
 	}
 	
-	.etsy-light .etsy-navigation li a.active {
+	.simply-etsy--light .simply-etsy__navigation li a.active {
 		background-color: rgba(0,0,0,.25);
 		border: 1px solid #555;
 	}
@@ -202,7 +209,7 @@
    Loading Styles
    ========================================================================== */
    
-   .etsy-loading {
+   .simply-etsy__loading {
 	   margin: auto;
 	   padding: 50px;
 	   text-align: center;
